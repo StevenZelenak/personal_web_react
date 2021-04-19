@@ -1,0 +1,33 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+$main-purp: #3c0d47;
+$main-text-color: white;
+$main-text-font: 'Roboto Slab',
+serif;
+
+
+
+h1 {
+  color: white;
+}
+
+.navbarBackground {
+  background: linear-gradient($main-purp, #4a2653);
+}
+
+.navbarBackground a {
+  color: $main-text-color;
+  font-family: $main-text-font;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.navbarBackground a:hover {
+  background: #330b3b;
+  box-shadow: 0 0 0px 10px #330b3b;
+}
+
+.logoBorder {
+  border: white solid 2px;
+  padding: 1px 4px 1px 4px;
+}
