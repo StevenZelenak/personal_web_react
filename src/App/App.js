@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import NavbarComp from '../Components/Navbar/navbarComponent';
 import CanvaComp from '../Components/Canvas/Jumbo/CanvaComponent';
 import BioComp from '../Components/Bio/BioComponent';
+import SkillsIKnowComponent from '../Components/SkillsIKnow/SkillsIKnowComponent';
+import SkillsIAmLearning from '../Components/SkillsIAmLearning/SkillsIAmLearningComponent';
 import './App.scss';
 // import fbConnection from '../helpers/data/connection';
 
@@ -12,14 +14,13 @@ import './App.scss';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Router>
-          <NavbarComp />
-          <CanvaComp />
-          <BioComp />
-        </Router>
-        <h1>This is the App</h1>
-      </div>
+      <Container fluid className="App">
+        <NavbarComp />
+        <CanvaComp />
+        <BioComp />
+        <SkillsIKnowComponent />
+        <SkillsIAmLearning />
+      </Container>
     );
   }
 }
