@@ -8,11 +8,11 @@ import './navbarComponent.scss';
 class NavbarComponent extends React.Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg" fixed="top">
-        <Navbar.Brand href="#home">SZ</Navbar.Brand>
+      <Navbar bg="dark" expand="lg" fixed="top" className="navbarBackground">
+        <Navbar.Brand href="#home" className="logoBorder">SZ</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto">
             <Nav.Link href="#bio">Bio</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
